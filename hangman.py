@@ -105,6 +105,7 @@ print(f"Hint:   {hnt}")
 if __name__ ==  "__main__":
     while attempts > 0 and '_' in display:
         print(stage[6 - attempts])
+        print(attempts)
         print("\n" + " ".join(display))
         guess= input("Guess The Words-> ").lower()
 
@@ -125,5 +126,7 @@ if '_' not in display:
                   
 else:
     print(stage[6])
-    print("YOU RAN OUT OF ATTEMPtS",wrd)
-    print("IDIOT!!!!")
+    print("The Word Was: ",wrd)
+    print("                                  -------------YOU RAN OUT OF ATTEMPtS-------------")
+    print("                                                     IDIOT!!!!")
+
